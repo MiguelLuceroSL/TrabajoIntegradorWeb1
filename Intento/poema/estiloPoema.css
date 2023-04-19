@@ -1,0 +1,144 @@
+* {
+    border-width: 1px;
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+.conteiner {
+    width: 100vw;
+}
+
+.encabezado {
+    width: 100vw;
+    /*#393E46
+    #d8d8d8*/
+    background-color: #393E46;
+    color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primerDiv {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px #393E46 solid;
+}
+
+.tituloPrincipal {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 10px;
+    font-size:20px;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+hr{
+    color: azure;
+}
+
+.navegador {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    /*#393E46
+    #d8d8d8*/
+    color: #d8d8d8;
+    width: 100vw;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.articulo {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #393E46;
+}
+
+.parrafos {
+    font-family:'Courier New', Courier, monospace;
+    box-shadow: 10px 8px 4px 0px #393E46;
+    opacity: 0.95;
+    background-color: #d8d8d8;
+    border: black 1px solid;
+    font-size: 15px;
+    width: 70vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p, h4{
+    padding: 15px;
+}
+
+.parrafo4 {
+    width: 70vw;
+    text-align: right;
+}
+
+.primerHR {
+    padding-bottom: 20px;
+}
+
+.segundoHR {
+    width: 100vw;
+}
+
+.ache4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #393E46;
+    width: 90vw;
+    padding: 15px;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #393E46;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+.derechos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media (min-width: 485px) {
+
+}
+
+@media (min-width: 730px) {
+
+}

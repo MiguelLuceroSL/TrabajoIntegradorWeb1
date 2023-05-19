@@ -1,0 +1,430 @@
+* {
+    border-width: 1px;
+    padding: 0; margin: 0; box-sizing: border-box;
+    color: #B4B8CD;
+    /* border: 1px solid red; */
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #393E46;
+}
+
+.conteiner { /*Contenedor pagina Poema*/
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: -50px; /* Establece un margen negativo para compensar el margen superior agregado al pie de página */
+}
+
+.encabezado { /*Encabezado de las 3 paginas*/
+    width: 100%;
+    height: 20vh;
+    /*#393E46
+    #d8d8d8*/
+    background-color: #1F1E27;
+    color: #B4B8CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: black 1px solid;
+}
+
+.primerDiv { /*Primer Div pagina Poema*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloPrincipal { /*Titulo pagina Poema*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size:20px;
+}
+
+.logo { /*Logo de las 3 paginas*/
+    padding-top: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.separadorHR{ /*Linea horizontal separadora*/
+    color: azure;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navegador { /*Navegador de las 3 paginas*/
+    cursor: pointer; /*Cursor para los botones Inicio-Nuestro Poema-Contactanos*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px; /*Separa a los elementos entre si*/
+}
+
+.articulo { /*Articulo pagina Poema*/
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafos { /*Parrafos pagina Poema*/
+    font-family:'Courier New', Courier, monospace;
+    box-shadow: 10px 8px 4px 0px rgb(7, 17, 17); /*Sombra para el texto*/
+    opacity: 0.95; /*Opacidad de la sombra*/
+    background-color: #1F1E27;
+    border: black 1px solid;
+    font-size: 15px;
+    width: 70vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafos>img{
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p, h4{
+    padding: 15px;
+}
+
+.parrafo4 { /*Parrafo pagina Poema*/
+    width: 70vw;
+    text-align: right;
+}
+
+.poemaHR {
+    width: 100vw;
+}
+
+.ache4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 90vw;
+    padding: 15px;
+}
+
+.tituloContacto {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.obligatorio {
+    color: rgb(185, 11, 11);
+}
+
+input, textarea {
+    padding-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-color: black; 
+    border-style: solid; 
+    border-radius: 10px; 
+}
+
+.articuloIndex {
+    padding-top: 30px;
+}
+
+textarea {
+    height: 100px;
+    
+}
+
+button {
+    color: black;
+    border-color: black; 
+    border-style: solid; 
+    border-radius: 10px; 
+    margin-top: 15px;
+}
+
+.formularioContacto{
+    border-color: black; 
+    border-style: solid; 
+    border-radius: 10px; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    background-color: #1F1E27;
+    width: 70vw;
+}
+
+.h1Index {
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tit{
+    color: white;
+}
+
+.historiaIndex {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.listaIndex {
+    margin-left: 40px;
+}
+
+.ultimoPIndex {
+    padding-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    font-size:small;
+    background-color: #1F1E27;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    margin-top: 72px; /* Agrega un margen superior para separar el pie de pagina del contenido anterior */
+    height: 50px; /* Establece una altura fija para el pie de página */
+}
+
+.derechos {
+    width: 100%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.derechosContacto {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #1F1E27;
+    position: fixed;
+    bottom: 0;
+}
+
+.listaCuento{
+    padding-left: 50px;
+}
+
+#cont{
+    font-size: 17px;
+}
+
+.divEnviar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#enviar{
+    padding: 0.5rem;
+}
+
+.carrousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px;
+    background-color: #2d2c38;
+}
+
+#fotos1{
+    width: 150px;
+    height: 100px;
+}
+
+#fotos2{
+    width: 150px;
+    height: 100px;
+}
+
+.carrousel img{
+    cursor: pointer;
+    color: white;
+}
+
+@media (min-width: 565px) {
+    p {
+        max-width: 400px;
+    }
+    #cont{
+        font-size: 25px;
+    }
+    input{
+        height: 1.2rem;
+    }
+    #enviar{
+        width: 3.5rem;
+        height: 2rem;
+    }
+    #mensaje::placeholder{
+        font-size: 14px;
+    }
+    #fotos1{
+        width: 200px;
+        height: 133px;
+    }
+    #fotos2{
+        width: 200px;
+        height: 133px;
+    }
+}
+
+@media (min-width: 730px) {
+    p {
+        max-width: 500px;
+    }
+    .encabezado {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 10vh;
+    }
+    .navegador{
+        height: 100%;
+        margin-right: 20px;
+        align-items: center;
+    }
+    .primerDiv{
+        margin-left: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    input{
+        height: 1.5rem;
+    }
+    #enviar{
+        width: 3.5rem;
+        height: 2rem;
+    }
+    #mensaje::placeholder{
+        font-size: 15px;
+    }
+    #fotos1{
+        width: 300px;
+        height: 200px;
+    }
+    #fotos2{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 920px) {
+    p {
+        max-width: 600px;
+    }
+    footer {
+        margin-top: 80px;
+    }
+    input{
+        height: 2rem;
+    }
+    #enviar{
+        width: 3.5rem;
+        height: 2rem;
+    }
+    #mensaje::placeholder{
+        font-size: 16px;
+    }
+    #fotos1{
+        width: 450px;
+        height: 300px;
+    }
+    #fotos2{
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    p {
+        max-width: 700px;
+    }
+    footer {
+        margin-top: 100px;
+    }
+    input{
+        height: 2.5rem;
+    }
+    #enviar{
+        width: 3.5rem;
+        height: 2rem;
+    }
+    #mensaje::placeholder{
+        font-size: 16px;
+    }
+    #fotos1{
+        width: 600px;
+        height: 400px;
+    }
+    #fotos2{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1350px) {
+    p {
+        max-width: 800px;
+    }
+    footer {
+        margin-top: 226px;
+    }
+    input{
+        height: 3rem;
+    }
+    #enviar{
+        width: 6vw;
+        height: 2rem;
+    }
+    #mensaje::placeholder{
+        font-size: 16px;
+    }
+    #fotos1{
+        width: 750px;
+        height: 500px;
+    }
+    #fotos2{
+        width: 750px;
+        height: 500px;
+    }
+    .parrafos{
+        width: 60vw;
+    }
+}

@@ -264,12 +264,7 @@ footer {
     background-color: #2d2c38;
 }
 
-#fotos1{
-    width: 150px;
-    height: 100px;
-}
-
-#fotos2{
+#fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
     width: 150px;
     height: 100px;
 }
@@ -296,14 +291,12 @@ footer {
     #mensaje::placeholder{
         font-size: 14px;
     }
-    #fotos1{
+    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
         width: 200px;
         height: 133px;
     }
-    #fotos2{
-        width: 200px;
-        height: 133px;
-    }
+
+
 }
 
 @media (min-width: 730px) {
@@ -335,11 +328,7 @@ footer {
     #mensaje::placeholder{
         font-size: 15px;
     }
-    #fotos1{
-        width: 300px;
-        height: 200px;
-    }
-    #fotos2{
+    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
         width: 300px;
         height: 200px;
     }
@@ -362,11 +351,7 @@ footer {
     #mensaje::placeholder{
         font-size: 16px;
     }
-    #fotos1{
-        width: 450px;
-        height: 300px;
-    }
-    #fotos2{
+    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
         width: 450px;
         height: 300px;
     }
@@ -389,11 +374,7 @@ footer {
     #mensaje::placeholder{
         font-size: 16px;
     }
-    #fotos1{
-        width: 600px;
-        height: 400px;
-    }
-    #fotos2{
+    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
         width: 600px;
         height: 400px;
     }
@@ -416,11 +397,7 @@ footer {
     #mensaje::placeholder{
         font-size: 16px;
     }
-    #fotos1{
-        width: 750px;
-        height: 500px;
-    }
-    #fotos2{
+    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
         width: 750px;
         height: 500px;
     }

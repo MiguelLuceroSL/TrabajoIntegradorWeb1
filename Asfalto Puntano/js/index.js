@@ -1,67 +1,97 @@
-//Fredy
-let intervalo = setInterval(nextF, 3000);
+//carrousel de Fredy
+const imagenesF = [ //arreglo con cada foto de Fredy
+    '../images/fredy1.jpg',
+    '../images/fredy2.jpg',
+    '../images/fredy3.jpg',
+    '../images/fredy4.jpg',
+    '../images/fredy5.jpg'
+  ];
+  
+//variables que se usaran para Fredy
+let indexF = 0;
+let imagenFredy = document.getElementById('imagenF');
+let previoF = document.getElementById('prevF');
+let siguienteF = document.getElementById('nextF');
 
-function prevF(){
-    let imagen = document.getElementById("fotos1");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/fredy5.jpg";
-            imagen.className = "foto5";
-        break;
-        case "foto2":
-            imagen.src="../images/fredy1.jpg";
-            imagen.className = "foto1";
-        break;
-        case "foto3":
-            imagen.src="../images/fredy2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto4":
-            imagen.src="../images/fredy3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto5":
-            imagen.src="../images/fredy4.jpg";
-            imagen.className = "foto4";
-        break;
+function mostrarF() { //funcion que muestra la foto actual
+  imagenFredy.src = imagenesF[indexF];
+}
+
+function prevImagenF() { //funcion para mostrar la foto anterior
+    indexF--;
+    if (indexF < 0) {
+        indexF = imagenesF.length - 1;
     }
+    mostrarF();
 }
 
-function detener(){
-    clearInterval(intervalo);
+function nextImagenF() { //funcion para mostrar la foto siguiente
+    indexF++;
+  if (indexF >= imagenesF.length) {
+    indexF = 0;
+  }
+  mostrarF();
 }
 
-document.querySelector(".prev").addEventListener("click",detener);
-document.querySelector(".next").addEventListener("click",detener);
+//escuchadores para los botones
+previoF.addEventListener('click', prevImagenF);
+siguienteF.addEventListener('click', nextImagenF);
 
-function nextF(){
-    let imagen = document.getElementById("fotos1");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/fredy2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto2":
-            imagen.src="../images/fredy3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto3":
-            imagen.src="../images/fredy4.jpg";
-            imagen.className = "foto4";
-        break;
-        case "foto4":
-            imagen.src="../images/fredy5.jpg";
-            imagen.className = "foto5";
-        break;
-        case "foto5":
-            imagen.src="../images/fredy1.jpg";
-            imagen.className = "foto1";
-        break;
+mostrarF(); //para mostrar la primer imagen al cargar la pagina
+
+//sentencias para que vayan automaticamente hasta que toquen algun boton
+let intervaloF = setInterval(nextImagenF, 3000);
+
+function detenerF(){
+    clearInterval(intervaloF);
+}
+
+document.querySelector(".prevF").addEventListener("click",detenerF);
+document.querySelector(".nextF").addEventListener("click",detenerF);
+//-------------------------------------------------------------------------
+
+//carrousel de Vivi
+const imagenesV = [ //arreglo con cada foto de Vivi
+    '../images/vivi1.jpg',
+    '../images/vivi2.jpg',
+    '../images/vivi3.jpg',
+    '../images/vivi4.jpg'
+  ];
+  
+//variables que se usaran para Vivi
+let indexV = 0;
+let imagenVivi = document.getElementById('imagenV');
+let previoV = document.getElementById('prevV');
+let siguienteV = document.getElementById('nextV');
+
+function mostrarV() { //funcion que muestra la foto actual
+  imagenVivi.src = imagenesV[indexV];
+}
+
+function prevImagenV() { //funcion para mostrar la foto anterior
+    indexV--;
+    if (indexV < 0) {
+        indexV = imagenesV.length - 1;
     }
+    mostrarV();
 }
 
-//Vivi
-let intervaloV = setInterval(nextV, 3000);
+function nextImagenV() { //funcion para mostrar la foto siguiente
+    indexV++;
+  if (indexV >= imagenesV.length) {
+    indexV = 0;
+  }
+  mostrarV();
+}
+
+//escuchadores para los botones
+previoV.addEventListener('click', prevImagenV);
+siguienteV.addEventListener('click', nextImagenV);
+
+mostrarV(); //para mostrar la primer imagen al cargar la pagina
+
+//sentencias para que vayan automaticamente hasta que toquen algun boton
+let intervaloV = setInterval(nextImagenV, 3000);
 
 function detenerV(){
     clearInterval(intervaloV);
@@ -69,53 +99,49 @@ function detenerV(){
 
 document.querySelector(".prevV").addEventListener("click",detenerV);
 document.querySelector(".nextV").addEventListener("click",detenerV);
+//----------------------------------------------------------------------
+//carrousel de Sonia
+const imagenesS = [ //arreglo con cada foto de Sonia
+    '../images/sonia1.jpg',
+    '../images/sonia2.jpg',
+    '../images/sonia3.jpg',
+    '../images/sonia4.jpg'
+  ];
+  
+//variables que se usaran para Sonia
+let indexS = 0;
+let imagenSonia = document.getElementById('imagenS');
+let previoS = document.getElementById('prevS');
+let siguienteS = document.getElementById('nextS');
 
-function prevV(){
-    let imagen = document.getElementById("fotos2");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/vivi4.jpg";
-            imagen.className = "foto4";
-        break;
-        case "foto2":
-            imagen.src="../images/vivi1.jpg";
-            imagen.className = "foto1";
-        break;
-        case "foto3":
-            imagen.src="../images/vivi2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto4":
-            imagen.src="../images/vivi3.jpg";
-            imagen.className = "foto3";
-        break;
-    }
+function mostrarS() { //funcion que muestra la foto actual
+  imagenSonia.src = imagenesS[indexS];
 }
 
-function nextV(){
-    let imagen = document.getElementById("fotos2");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/vivi2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto2":
-            imagen.src="../images/vivi3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto3":
-            imagen.src="../images/vivi4.jpg";
-            imagen.className = "foto4";
-        break;
-        case "foto4":
-            imagen.src="../images/vivi1.jpg";
-            imagen.className = "foto1";
-        break;
+function prevImagenS() { //funcion para mostrar la foto anterior
+    indexS--;
+    if (indexS < 0) {
+        indexS = imagenesS.length - 1;
     }
+    mostrarS();
 }
 
-//Sonia
-let intervaloS = setInterval(nextS, 3000);
+function nextImagenS() { //funcion para mostrar la foto siguiente
+    indexS++;
+  if (indexS >= imagenesS.length) {
+    indexS = 0;
+  }
+  mostrarS();
+}
+
+//escuchadores para los botones
+previoS.addEventListener('click', prevImagenS);
+siguienteS.addEventListener('click', nextImagenS);
+
+mostrarS(); //para mostrar la primer imagen al cargar la pagina
+
+//sentencias para que vayan automaticamente hasta que toquen algun boton
+let intervaloS = setInterval(nextImagenS, 3000);
 
 function detenerS(){
     clearInterval(intervaloS);
@@ -123,79 +149,51 @@ function detenerS(){
 
 document.querySelector(".prevS").addEventListener("click",detenerS);
 document.querySelector(".nextS").addEventListener("click",detenerS);
-
-function prevS(){
-    let imagen = document.getElementById("fotos6");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/sonia4.jpg";
-            imagen.className = "foto4";
-        break;
-        case "foto2":
-            imagen.src="../images/sonia1.jpg";
-            imagen.className = "foto1";
-        break;
-        case "foto3":
-            imagen.src="../images/sonia2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto4":
-            imagen.src="../images/sonia3.jpg";
-            imagen.className = "foto3";
-        break;
-    }
-}
-
-function nextS(){
-    let imagen = document.getElementById("fotos6");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/sonia2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto2":
-            imagen.src="../images/sonia3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto3":
-            imagen.src="../images/sonia4.jpg";
-            imagen.className = "foto4";
-        break;
-        case "foto4":
-            imagen.src="../images/sonia1.jpg";
-            imagen.className = "foto1";
-        break;
-    }
-}
-
+//------------------------------------------------------------------
 //Dario
-let intervaloD = setInterval(nextD, 3000);
+//carrousel de Dario
+const imagenesD = [ //arreglo con cada foto de Dario
+    '../images/dario1.jpg',
+    '../images/dario2.jpg',
+    '../images/dario3.jpg',
+    '../images/dario4.jpg',
+    '../images/dario5.jpg'
+  ];
+  
+//variables que se usaran para Dario
+let indexD = 0;
+let imagenDario = document.getElementById('imagenD');
+let previoD = document.getElementById('prevD');
+let siguienteD = document.getElementById('nextD');
 
-function prevD(){
-    let imagen = document.getElementById("fotos7");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/dario5.jpg";
-            imagen.className = "foto5";
-        break;
-        case "foto2":
-            imagen.src="../images/dario1.jpg";
-            imagen.className = "foto1";
-        break;
-        case "foto3":
-            imagen.src="../images/dario2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto4":
-            imagen.src="../images/dario3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto5":
-            imagen.src="../images/dario4.jpg";
-            imagen.className = "foto4";
-        break;
-    }
+function mostrarD() { //funcion que muestra la foto actual
+  imagenDario.src = imagenesD[indexD];
 }
+
+function prevImagenD() { //funcion para mostrar la foto anterior
+    indexD--;
+    if (indexD < 0) {
+        indexD = imagenesD.length - 1;
+    }
+    mostrarD();
+}
+
+function nextImagenD() { //funcion para mostrar la foto siguiente
+    indexD++;
+  if (indexD >= imagenesD.length) {
+    indexD = 0;
+  }
+  mostrarD();
+}
+
+//escuchadores para los botones
+previoD.addEventListener('click', prevImagenD);
+siguienteD.addEventListener('click', nextImagenD);
+
+mostrarD(); //para mostrar la primer imagen al cargar la pagina
+
+//sentencias para que vayan automaticamente hasta que toquen algun boton
+let intervaloD = setInterval(nextImagenD, 3000);
 
 function detenerD(){
     clearInterval(intervaloD);
@@ -203,91 +201,56 @@ function detenerD(){
 
 document.querySelector(".prevD").addEventListener("click",detenerD);
 document.querySelector(".nextD").addEventListener("click",detenerD);
-
-function nextD(){
-    let imagen = document.getElementById("fotos7");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/dario2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto2":
-            imagen.src="../images/dario3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto3":
-            imagen.src="../images/dario4.jpg";
-            imagen.className = "foto4";
-        break;
-        case "foto4":
-            imagen.src="../images/dario5.jpg";
-            imagen.className = "foto5";
-        break;
-        case "foto5":
-            imagen.src="../images/dario1.jpg";
-            imagen.className = "foto1";
-        break;
-    }
-}
-
+//------------------------------------------------------------------
 //Cuento
-let intervaloC = setInterval(nextC, 3000);
+//carrousel de Cuento Corto
+const imagenesC = [ //arreglo con cada foto de Cuento
+    '../images/cuento1.jpg',
+    '../images/cuento2.jpg',
+    '../images/cuento3.jpg',
+    '../images/cuento4.jpg',
+    '../images/cuento5.jpg',
+    '../images/cuento6.jpg'
+  ];
+  
+//variables que se usaran para Cuento
+let indexC = 0;
+let imagenCuento = document.getElementById('imagenC');
+let previoC = document.getElementById('prevC');
+let siguienteC = document.getElementById('nextC');
 
-function prevC(){
-    let imagen = document.getElementById("fotos8");//quede acaxd
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/dario5.jpg";
-            imagen.className = "foto5";
-        break;
-        case "foto2":
-            imagen.src="../images/dario1.jpg";
-            imagen.className = "foto1";
-        break;
-        case "foto3":
-            imagen.src="../images/dario2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto4":
-            imagen.src="../images/dario3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto5":
-            imagen.src="../images/dario4.jpg";
-            imagen.className = "foto4";
-        break;
+function mostrarC() { //funcion que muestra la foto actual
+  imagenCuento.src = imagenesC[indexC];
+}
+
+function prevImagenC() { //funcion para mostrar la foto anterior
+    indexC--;
+    if (indexC < 0) {
+        indexC = imagenesC.length - 1;
     }
+    mostrarC();
 }
 
-function detenerD(){
-    clearInterval(intervaloD);
+function nextImagenC() { //funcion para mostrar la foto siguiente
+    indexC++;
+  if (indexC >= imagenesC.length) {
+    indexC = 0;
+  }
+  mostrarC();
 }
 
-document.querySelector(".prevD").addEventListener("click",detenerD);
-document.querySelector(".nextD").addEventListener("click",detenerD);
+//escuchadores para los botones
+previoC.addEventListener('click', prevImagenC);
+siguienteC.addEventListener('click', nextImagenC);
 
-function nextD(){
-    let imagen = document.getElementById("fotos7");
-    switch (imagen.className){
-        case "foto1":
-            imagen.src="../images/dario2.jpg";
-            imagen.className = "foto2";
-        break;
-        case "foto2":
-            imagen.src="../images/dario3.jpg";
-            imagen.className = "foto3";
-        break;
-        case "foto3":
-            imagen.src="../images/dario4.jpg";
-            imagen.className = "foto4";
-        break;
-        case "foto4":
-            imagen.src="../images/dario5.jpg";
-            imagen.className = "foto5";
-        break;
-        case "foto5":
-            imagen.src="../images/dario1.jpg";
-            imagen.className = "foto1";
-        break;
-    }
+mostrarC(); //para mostrar la primer imagen al cargar la pagina
+
+//sentencias para que vayan automaticamente hasta que toquen algun boton
+let intervaloC = setInterval(nextImagenC, 3000);
+
+function detenerC(){
+    clearInterval(intervaloC);
 }
+
+document.querySelector(".prevC").addEventListener("click",detenerC);
+document.querySelector(".nextC").addEventListener("click",detenerC);

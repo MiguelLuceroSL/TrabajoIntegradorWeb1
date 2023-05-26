@@ -10,13 +10,13 @@
 <body>
     <header class="encabezado">
         <nav class="navegador">
-            <a href="../index.html" class="navegador pagina2">Inicio</a>
-            <a href="../club/club.html" class="navegador pagina3">Club</a>
-            <a href="contacto.html" class="navegador pagina3">Contactanos</a>
+            <a href="../index.html" class="navegador pagina2 tit">Inicio</a>
+            <a href="../club/club.html" class="navegador pagina3 tit">Club</a>
+            <a href="contacto.html" class="navegador pagina3 tit">Contactanos</a>
         </nav>
         <div class="primerDiv">
             <img class="logo" src="../logo.png" alt="" width="77" height="95">
-            <h1 class="tituloPrincipal">ASFALTO PUNTANO</h1>
+            <h1 class="tituloPrincipal tit">ASFALTO PUNTANO</h1>
         </div>
     </header>
     <article class="articulo">
@@ -24,30 +24,32 @@
             <h2 class="tit" id="cont">Contactate con Nosotros</h2>
         </div>
     </article>
-    <div class="formularioContacto">
+    <form class="formularioContacto" id="formContacto">
         <label for="nombre" class="nombreContacto">Nombre <span class="obligatorio">*</span> </label>
-        <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
 
         <label for="apellido" class="apellidoContacto">Apellido <span class="obligatorio">*</span> </label>
-        <input type="text" name="apellido" id="apellido" required placeholder="Apellido">
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
 
         <label for="mail" class="mailContacto"> Email <span class="obligatorio">*</span> </label>
-        <input type="email" name="mail" id="mail" required="obligatorio" placeholder="Email">
+        <input type="text" name="mail" id="mail" placeholder="Email">
 
         <label for="telefono" class="telefonoContacto"> Teléfono </label>
         <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
 
         <label for="mensaje" class="msjContacto"> Mensaje <span class="obligatorio">*</span> </label>
-        <textarea name="mensaje" class="mensajeContacto" id="mensaje" required placeholder="Dejanos tu mensaje..."></textarea>
-
+        <textarea name="mensaje" class="mensajeContacto" id="mensaje" placeholder="Dejanos tu mensaje..."></textarea>
+        <p id="error"></p>
+        <p id="enviado"></p>
         <div class="divEnviar">
             <button type="submit" name="enviarDatosContacto" id="enviar">Enviar</button>
         </div>
 
         <p class="aviso">Los campos con <span class="obligatorio">*</span> son obligatorios.</p>
-    </div>
+    </form>
     <footer>
-        <h4 class="derechosContacto">© 2023 Asfalto Puntano. Todos los derechos reservados.</h4>
+        <h4 class="derechosContacto tit">© 2023 Asfalto Puntano. Todos los derechos reservados.</h4>
     </footer>
+    <script src="../js/form.js"></script>
 </body>
 </html>

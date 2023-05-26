@@ -12,7 +12,15 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #393E46;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+/* .bodyClub {
+    background-image: url(fondoClub.jpg);
+} */
 
 .conteiner { /*Contenedor pagina Poema*/
     width: 100%;
@@ -188,10 +196,6 @@ button {
     justify-content: center;
 }
 
-.tit{
-    color: white;
-}
-
 .historiaIndex {
     color: white;
     display: flex;
@@ -264,7 +268,7 @@ footer {
     background-color: #2d2c38;
 }
 
-#fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
+#imagenF,#imagenV,#fotos3,#fotos4,#fotos5,#imagenS,#imagenD,#imagenC,#fotos9,#fotos10,#fotos11{
     width: 150px;
     height: 100px;
 }
@@ -272,6 +276,10 @@ footer {
 .carrousel img{
     cursor: pointer;
     color: white;
+}
+
+.tit{
+    color: rgb(208, 208, 14);
 }
 
 @media (min-width: 565px) {
@@ -291,7 +299,7 @@ footer {
     #mensaje::placeholder{
         font-size: 14px;
     }
-    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
+    #imagenF,#imagenV,#fotos3,#fotos4,#fotos5,#imagenS,#imagenD,#imagenC,#fotos9,#fotos10,#fotos11{
         width: 200px;
         height: 133px;
     }
@@ -328,7 +336,7 @@ footer {
     #mensaje::placeholder{
         font-size: 15px;
     }
-    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
+    #imagenF,#imagenV,#fotos3,#fotos4,#fotos5,#imagenS,#imagenD,#imagenC,#fotos9,#fotos10,#fotos11{
         width: 300px;
         height: 200px;
     }
@@ -351,7 +359,7 @@ footer {
     #mensaje::placeholder{
         font-size: 16px;
     }
-    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
+    #imagenF,#imagenV,#fotos3,#fotos4,#fotos5,#imagenS,#imagenD,#imagenC,#fotos9,#fotos10,#fotos11{
         width: 450px;
         height: 300px;
     }
@@ -374,7 +382,7 @@ footer {
     #mensaje::placeholder{
         font-size: 16px;
     }
-    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
+    #imagenF,#imagenV,#fotos3,#fotos4,#fotos5,#imagenS,#imagenD,#imagenC,#fotos9,#fotos10,#fotos11{
         width: 600px;
         height: 400px;
     }
@@ -397,7 +405,7 @@ footer {
     #mensaje::placeholder{
         font-size: 16px;
     }
-    #fotos1,#fotos2,#fotos3,#fotos4,#fotos5,#fotos6,#fotos7{
+    #imagenF,#imagenV,#fotos3,#fotos4,#fotos5,#imagenS,#imagenD,#imagenC,#fotos9,#fotos10,#fotos11{
         width: 750px;
         height: 500px;
     }

@@ -57,15 +57,16 @@ formulario.addEventListener("submit",function(evento){
     }
 
     function validarTel(tel){
-        if(tel.length>9&&tel.length<14){
+        if((tel.length>9&&tel.length<14)||tel==""){
             for(let i=0;i<tel.length;i++){
                 if(!isNaN(tel.substring(i,i+1))){
-                    console.log("hola1");
                     return false;
                 }
             }
+            if(tel==""){
+                return false;
+            }
         } else {
-            console.log("chau");
             return true;
         }
     }

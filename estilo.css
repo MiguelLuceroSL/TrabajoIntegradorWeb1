@@ -63,7 +63,7 @@ body {
 }
 
 .separadorHR{ /*Linea horizontal separadora*/
-    color: azure;
+    border-color: rgb(66, 65, 65);
     width: 100%;
     margin-top: 20px;
 }
